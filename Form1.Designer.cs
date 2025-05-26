@@ -35,13 +35,20 @@ namespace Controle_Pg_Obras
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prestadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.obrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.etapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orçamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arquivoToolStripMenuItem});
+            this.arquivoToolStripMenuItem,
+            this.cadastrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -72,6 +79,50 @@ namespace Controle_Pg_Obras
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.prestadoresToolStripMenuItem,
+            this.empresasToolStripMenuItem,
+            this.obrasToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // prestadoresToolStripMenuItem
+            // 
+            this.prestadoresToolStripMenuItem.Name = "prestadoresToolStripMenuItem";
+            this.prestadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.prestadoresToolStripMenuItem.Text = "Prestadores";
+            // 
+            // empresasToolStripMenuItem
+            // 
+            this.empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
+            this.empresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresasToolStripMenuItem.Text = "Empresas";
+            // 
+            // obrasToolStripMenuItem
+            // 
+            this.obrasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.etapasToolStripMenuItem});
+            this.obrasToolStripMenuItem.Name = "obrasToolStripMenuItem";
+            this.obrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.obrasToolStripMenuItem.Text = "Obras";
+            // 
+            // etapasToolStripMenuItem
+            // 
+            this.etapasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.orçamentosToolStripMenuItem});
+            this.etapasToolStripMenuItem.Name = "etapasToolStripMenuItem";
+            this.etapasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.etapasToolStripMenuItem.Text = "Etapas";
+            // 
+            // orçamentosToolStripMenuItem
+            // 
+            this.orçamentosToolStripMenuItem.Name = "orçamentosToolStripMenuItem";
+            this.orçamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orçamentosToolStripMenuItem.Text = "Orçamentos";
+            // 
             // Form_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,6 +150,12 @@ namespace Controle_Pg_Obras
         private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prestadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empresasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem obrasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem etapasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orçamentosToolStripMenuItem;
     }
 }
 
