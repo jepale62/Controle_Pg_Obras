@@ -41,6 +41,9 @@ namespace Controle_Pg_Obras
             this.obrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orçamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +71,14 @@ namespace Controle_Pg_Obras
             // salvarToolStripMenuItem
             // 
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
             this.salvarToolStripMenuItem.Click += new System.EventHandler(this.salvarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -91,6 +94,10 @@ namespace Controle_Pg_Obras
             // 
             // prestadoresToolStripMenuItem
             // 
+            this.prestadoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem,
+            this.alterarToolStripMenuItem,
+            this.excluirToolStripMenuItem});
             this.prestadoresToolStripMenuItem.Name = "prestadoresToolStripMenuItem";
             this.prestadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prestadoresToolStripMenuItem.Text = "Prestadores";
@@ -114,14 +121,32 @@ namespace Controle_Pg_Obras
             this.etapasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.orçamentosToolStripMenuItem});
             this.etapasToolStripMenuItem.Name = "etapasToolStripMenuItem";
-            this.etapasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.etapasToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.etapasToolStripMenuItem.Text = "Etapas";
             // 
             // orçamentosToolStripMenuItem
             // 
             this.orçamentosToolStripMenuItem.Name = "orçamentosToolStripMenuItem";
-            this.orçamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orçamentosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.orçamentosToolStripMenuItem.Text = "Orçamentos";
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Text = "Novo";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // excluirToolStripMenuItem
+            // 
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.excluirToolStripMenuItem.Text = "Excluir";
             // 
             // Form_Inicio
             // 
@@ -156,6 +181,9 @@ namespace Controle_Pg_Obras
         private System.Windows.Forms.ToolStripMenuItem obrasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem etapasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orçamentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
     }
 }
 
