@@ -37,13 +37,14 @@ namespace Controle_Pg_Obras
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prestadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.obrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.etapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orçamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.obrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cad_ObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orçamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeEtapasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +103,24 @@ namespace Controle_Pg_Obras
             this.prestadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prestadoresToolStripMenuItem.Text = "Prestadores";
             // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.novoToolStripMenuItem.Text = "Novo";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // excluirToolStripMenuItem
+            // 
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.excluirToolStripMenuItem.Text = "Excluir";
+            // 
             // empresasToolStripMenuItem
             // 
             this.empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
@@ -111,42 +130,33 @@ namespace Controle_Pg_Obras
             // obrasToolStripMenuItem
             // 
             this.obrasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.etapasToolStripMenuItem});
+            this.cad_ObraToolStripMenuItem,
+            this.cadastroDeEtapasToolStripMenuItem});
             this.obrasToolStripMenuItem.Name = "obrasToolStripMenuItem";
             this.obrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.obrasToolStripMenuItem.Text = "Obras";
             // 
-            // etapasToolStripMenuItem
+            // cad_ObraToolStripMenuItem
             // 
-            this.etapasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cad_ObraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.orçamentosToolStripMenuItem});
-            this.etapasToolStripMenuItem.Name = "etapasToolStripMenuItem";
-            this.etapasToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.etapasToolStripMenuItem.Text = "Etapas";
+            this.cad_ObraToolStripMenuItem.Name = "cad_ObraToolStripMenuItem";
+            this.cad_ObraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cad_ObraToolStripMenuItem.Text = "Cadastro de Obras";
+            this.cad_ObraToolStripMenuItem.Click += new System.EventHandler(this.cad_ObraToolStripMenuItem_Click);
             // 
             // orçamentosToolStripMenuItem
             // 
             this.orçamentosToolStripMenuItem.Name = "orçamentosToolStripMenuItem";
-            this.orçamentosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.orçamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.orçamentosToolStripMenuItem.Text = "Orçamentos";
+            this.orçamentosToolStripMenuItem.Click += new System.EventHandler(this.orçamentosToolStripMenuItem_Click);
             // 
-            // novoToolStripMenuItem
+            // cadastroDeEtapasToolStripMenuItem
             // 
-            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.novoToolStripMenuItem.Text = "Novo";
-            // 
-            // alterarToolStripMenuItem
-            // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // excluirToolStripMenuItem
-            // 
-            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.excluirToolStripMenuItem.Text = "Excluir";
+            this.cadastroDeEtapasToolStripMenuItem.Name = "cadastroDeEtapasToolStripMenuItem";
+            this.cadastroDeEtapasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cadastroDeEtapasToolStripMenuItem.Text = "Cadastro de Etapas";
             // 
             // Form_Inicio
             // 
@@ -179,11 +189,12 @@ namespace Controle_Pg_Obras
         private System.Windows.Forms.ToolStripMenuItem prestadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem empresasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem obrasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem etapasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cad_ObraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orçamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeEtapasToolStripMenuItem;
     }
 }
 

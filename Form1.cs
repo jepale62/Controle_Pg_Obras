@@ -31,5 +31,15 @@ namespace Controle_Pg_Obras
         {
             Close();
         }
+
+        private void cad_ObraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orçamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
